@@ -4,58 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../images/Stonks_emoji.svg.png">
-    <title>Photos</title>
+    <!-- bootstrap 4.1 css and js -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="shortcut icon" href=" ../images/Stonks_emoji.svg.png">
+    <title>Stonks</title>
 </head>
 
-<body>
+<body class="bg-primary col-lg text-center mx-auto">
 
-    <nav id="top">
+    <div id="top" class="d-flex align-items-center justify-content-center">
         <div class="nav-logo">
-            <a href="../index.html">
-                <img src="../images/Stonks_emoji.svg.png" alt="LOGO" height="150" class="logo" style="color:white;">
-                <h1 class="brand"> STONKS INVESTMENTS</h1>
+            <a href=" ../index.html">
+                <img src=" ../images/Stonks_emoji.svg.png" alt="LOGO" height="150" class="logo">
+                <h1 class="brand text-white">STONKS INVESTMENTS</h1>
             </a>
         </div>
 
-        <ul class="nav-links">
-            <li style="border-left: solid  black 4px" class="navlist dropbtn"><a class="navlink"
-                    href="../index.html">Home</a>
-                <div class="dropdown">
-                    <a href="../home/location.html" class="bordertop borderbottom">Find us</a>
-                </div>
-            </li>
-            <li class="navlist dropbtn"><a class="navlink" href="../about/about.html">About</a>
-                <div class="dropdown">
-                    <a href="../about/about.html" class="bordertop borderbottom">About us</a>
-                    <a href="../about/staff.html" class="borderbottom">Staff</a>
-                </div>
-            </li>
-            <li class="navlist"><a class="navlink" href="../gallery/gallery.html">Photo gallery</a></li>
-            <li class="navlist"><a class="navlink" href="../news/news.html">News</a></li>
-            <li class="navlist dropbtn"><a class="navlink" href="../contact/contact.html">Contact</a>
-                <div class="dropdown">
-                    <a href="../contact/contact.html" class="bordertop borderbottom">Contact us</a>
-                    <a href="../contact/shop.html" class="borderbottom">Shop</a>
-                </div>
-            </li>
-        </ul>
-
-    </nav>
-
-    <div id="content" class="inline">
-        <h1 class="title">Here's some pics</h1>
-        <img src="../images/stacks.jpg" alt="yay" class="pic2">
-        <img src="../images/invest.jpg" alt="invest" class="pic2">
-        <img src="../images/fall.jpg" alt="stonks" class="pic2">
-        <img src="../images/stocks.jpg" alt="stonks" class="pic2">
-
     </div>
 
-    <footer>
 
-        <a href="#top">Top of the page</a>
-        <p class="copyright">copyright 2022</p>
+
+    <!-- bootstrap navbar with dropdowns -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning d-flex my-xl-5 border-bottom border-warning border-top border-warning">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- centered bootstrap navbar with 3 dropdowns -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=" ../index.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Home
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../index.html">Home</a>
+                        <a class="dropdown-item" href="../home/location.html">Find us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../about/about.html">About Us</a>
+                        <a class="dropdown-item" href="../about/staff.html">Our staff</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../gallery/gallery.html">Photo gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../news/news.html">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contact
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../contact/contact.html">Contact us</a>
+                        <a class="dropdown-item" href="../contact/shop.html">Our shop</a>
+                    </div>
+                </li>
+            </ul>
+    </nav>
+
+    <div id="content" class="inline align-content-center">
+        <h1 class="title">Here's some pics</h1>
+        <img src="../images/stacks.jpg" alt="yay" class="pic2" width="400">
+        <img src="../images/invest.jpg" alt="invest" class="pic2" width="400">
+        <img src="../images/fall.jpg" alt="stonks" class="pic2" width="400">
+        <img src="../images/stocks.jpg" alt="stonks" class="pic2" width="400">
+    </div>
+
+    <!-- display images in a 2x2 grid -->
+
+    
+
+    <footer>
+        <div id="footer" class="border-top border-warning d-flex align-items-center justify-content-center m-xl-5">
+
+            <a href="#top" class="text-dark">Top of the page </a>
+            <p class="copyright"> copyright 2022</p>
+        </div>
     </footer>
 
 </body>
